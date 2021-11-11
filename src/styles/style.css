@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Responsive Web */
+    /* Bagian Nav */
+    nav-barr {
+        display: block;
+        background-color: rgba(40,41,43,255);
+        color: white;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    nav-barr h1 {
+        padding: 20px;
+        font-size: 3em;
+        text-align: center;
+        letter-spacing: 5px;
+        text-shadow:  0 10px 10px 0 rgb(0, 0, 0);
+    }
+
+    /* Bagian Jumbotron */
+    .jumbotron {
+        background-image: url(https://wallpapercave.com/wp/wp4016050.jpg);
+        background-size: cover;
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .list img {
+        width: 300px;
+        box-sizing: border-box;
+        margin-top: 60px;
+    }
+
+    /* Bagian Search Di Jumbotron*/
+    .search-input {
+        justify-content: center;
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-input input {
+        padding: 30px;
+        font-size: 20px;
+        text-align: center;
+        width: 50%;
+        font-weight: bold;
+        border: 0;
+        border-bottom: 3px solid rgba(40,41,43,255);
+    }
+
+    .search-input input:focus {
+        outline: 0;
+        border-bottom: 3px solid rgba(40,41,43,255);
+    }
+
+    .search-input input:focus::placeholder {
+        font-weight: bold;
+    }
+
+    .search-input button {
+        cursor: pointer;
+        padding: 25px;
+        font-size: 20px;
+        width: 50%;
+        margin: 10px 0px 20px 0px;
+        text-transform: uppercase;
+        background-color: rgba(40,41,43,255);
+        color: white;
+        letter-spacing: 5px;
+    }
+
+    /* Movie List */
+    movie-list {
+        margin-top: 35px;
+        padding: 0px 30px 0px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    movie-item {
+        margin-bottom: 5%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        /* overflow: hidden; */
+        display: flex;
+    }
+    
+    movie-list .placeholder {
+        font-weight: lighter;
+        color: black;
+        user-select: none;
+    }
+
+    .movie-img {
+        margin-bottom: -5px;
+    }
+
+    .movie-img img {
+        width: 380px;
+    }
+
+    .movieInfo {
+        box-sizing: border-box;
+        padding: 0px 50px;
+        margin-top: 10px;
+        overflow: scroll;
+        text-overflow:clip;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 10; /* number of lines to show */
+    }
+
+    .movieInfo p {
+        font-size: 35px;
+        margin-top: 15px;
+    }
+    
+    .movieInfo h2 {
+        font-size: 55px;
+        font-weight: bolder;
+    }
+
+@media (max-width: 1900px) {
+    .list img {
+        width: 270px;
+    }
+
+    .movie-img img {
+        width: 350px;
+    }
+
+    .movieInfo p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .movieInfo p {
+        font-size: 28px;
+    }
+
+    .movieInfo h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .list img {
+        width: 250px;
+    }
+
+    .movie-img img {
+        width: 330px;
+    }
+
+    .movieInfo p {
+        font-size: 25px;
+    }
+    
+    .movieInfo h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1500px){
+     /* Bagian Nav */
+    nav-barr h1 {
+        padding: 20px;
+        font-size: 2em;
+    }
+
+    /* Bagian Jumbotron */
+    .list img {
+        width: 180px;
+    }
+
+    /* Bagian Search Di Jumbotron*/
+    .search-input {
+        margin: 50px 0px;
+    }
+
+    .search-input input {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .search-input button {
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    /* Movie List */
+    movie-list {
+        margin-top: 35px;
+        padding: 0px 30px 0px 30px;
+    }
+
+
+    /* .movie .movie-poster {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+    } */
+
+    .movie-img img {
+        width: 200px;
+    }
+
+    .movieInfo p {
+        font-size: 20px;
+    }
+    
+    .movieInfo h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .list img:nth-child(5) {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .list img {
+        width: 150px;
+    }
+
+    .search-input input {
+        width: 60%;
+    }
+
+    .search-input button {
+        width: 60%;
+    }
+}
+
+@media (max-width: 630px) {
+    .list img {
+        width: 130px;
+    }
+
+    .movie-img {
+        padding: 10px 0px 10px 10px;
+    }
+
+    .movieInfo h2 {
+        font-size: 32px;
+    }
+
+    .movieInfo p {
+        font-size: 19px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    nav-barr {
+        margin-bottom: -50px;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .jumbotron {
+        height: 500px;
+    }
+
+    .search-input input {
+        margin: 40% 0px 0px 0px;
+    }
+
+    movie-item {
+        flex-direction: column;
+    }
+
+    .movie-img {
+        text-align: center;
+    }
+
+    .movie-img img {
+        width: 55%;
+    }
+
+    .movieInfo h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .movieInfo {
+        margin-bottom: 40px;
+    }
+
+    .movieInfo p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 450px) {
+    nav-barr h1 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .movieInfo h2 {
+        font-size: 25px;
+    }
+
+    .movieInfo p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .search-input input {
+        margin-top: 160px;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .search-input button {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .movieInfo p {
+        font-size: 13px;
+    }
+}
+
+
